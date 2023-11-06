@@ -1,6 +1,6 @@
 # Angular Reusable Components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
 
 * Angular Version - **16.2.9**
 * Node Version - **18.17.0**

@@ -1,0 +1,48 @@
+@import '../../scss/common.scss';
+
+.inputWrapper{
+  margin: 50px;
+  position: relative;
+  .input{
+      border: 1px solid $silver;
+      color: $gray;
+      border-radius: 0.25em;
+      padding: 0.5em 1.9em 0.5em 0.8em;
+      width: 100%;
+      margin: 0;
+      font-size: 1em;
+      font-family: inherit;
+
+      &:focus{
+          outline: 2px solid $purpleHeart;
+      }
+  }
+
+  .iconsStyle{
+    opacity: 0.6;
+    padding: 0 5px;
+    position: absolute;
+    right: 0.5em;
+    top: 30%;
+    cursor: pointer;
+  }
+  
+  .clearButton{
+    padding: 0 5px;
+    position: absolute;
+    right: 0.5em;
+    top: 20%;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background-color: $purpleHeart;
+      color: white;
+    }
+  }
+}

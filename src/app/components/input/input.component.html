@@ -1,0 +1,10 @@
+<div class="inputWrapper">
+  <input [placeholder]="placeholder" class="input" [type]="getInputType()" [value]="value"
+    (input)="onInputChange($event)">
+
+  <i [ngClass]="{'fa-regular':true,'iconsStyle':true, 'fa-eye':!togglePassword,'fa-eye-slash':togglePassword}"
+    (click)="handleFunc('toggle')" *ngIf="type === 'password'"></i>
+
+  <i class="fa-solid fa-xmark clearButton" *ngIf="isClearable && value.length > 0 && type !== 'password'"
+    (click)="handleFunc('clear')"></i>
+</div>

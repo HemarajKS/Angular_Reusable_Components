@@ -1,0 +1,14 @@
+<button
+  (click)="onClick()"
+  [disabled]="disabled"
+  [type]="type"
+  class="button"
+  [ngClass]="{
+    iconReverseClass: iconReverse,
+    disabledClass: disabled,
+    ghostButtonClass: ghostButton,
+    noBorderClass: noBorder
+  }"
+>
+  <span [innerHTML]="iconHTML"></span> <span>{{ label }}</span>
+</button>

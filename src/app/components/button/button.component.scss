@@ -1,0 +1,43 @@
+@import "../../scss/common";
+
+.button {
+  border: none;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: $bayOfMany;
+  color: $white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  gap: 8px;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 12px $bayOfManyLight;
+  }
+}
+
+.iconReverseClass {
+  flex-direction: row-reverse;
+}
+
+.disabledClass {
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+.ghostButtonClass {
+  border: 2px solid $bayOfMany;
+  background-color: $white;
+  color: $bayOfMany;
+}
+
+.noBorderClass {
+  border: none;
+}

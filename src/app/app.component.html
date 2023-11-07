@@ -1,2 +1,8 @@
 <app-input [type]="'text'" [placeholder]="'Enter Name'" [isClearable]="true" [value]="value" (valueChange)="onInputValueChange($event)"
 ></app-input>
+<app-button
+  label="Button Label"
+  type="button"
+  [onClick]="handleClick"
+  [iconHTML]="iconHtml"
+></app-button>

@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
-  declarations: [AppComponent, InputComponent],
+  declarations: [AppComponent, InputComponent, ButtonComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   bootstrap: [AppComponent],
 })

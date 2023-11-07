@@ -12,4 +12,9 @@ export class AppComponent {
   onInputValueChange(newValue: string) {
     this.value = newValue;
   }
+
+  handleClick() {
+    alert('Function from parent component is called');
+  }
+  iconHtml = '<i class="fa-solid fa-filter"></i>';
 }

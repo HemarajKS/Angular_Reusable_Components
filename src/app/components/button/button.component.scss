@@ -36,6 +36,13 @@
   border: 2px solid $bayOfMany;
   background-color: $white;
   color: $bayOfMany;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: none;
+    background: $bayOfMany;
+    color: $white;
+  }
 }
 
 .noBorderClass {

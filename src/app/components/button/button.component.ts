@@ -14,5 +14,6 @@ export class ButtonComponent {
   @Input() iconReverse: boolean = false;
   @Input() ghostButton: boolean = false;
   @Input() noBorder: boolean = false;
+  @Input() customStyle: object = {};
   @Input() onClick!: () => void;
 }

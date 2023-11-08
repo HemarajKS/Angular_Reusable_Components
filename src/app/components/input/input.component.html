@@ -1,0 +1,13 @@
+<div class="inputWrapper">
+  <div class="inputSection">
+    <input id="input" [placeholder]="placeholder" class="input" [type]="getInputType()" [ngModel]="value"
+      (ngModelChange)="onInputChange($event)" [disabled]="isDisabled">
+    <label class="labelClass" for="input" *ngIf="isLabelValid">{{label}}</label>
+  </div>
+
+  <i [ngClass]="{'fa-regular':true,'iconsStyle':true, 'fa-eye':!togglePassword,'fa-eye-slash':togglePassword}"
+    (click)="handleFunc('toggle')" *ngIf="type === 'password'"></i>
+
+  <i class="fa-solid fa-xmark clearButton" *ngIf="isClearable && value.length > 0 && isClearValid"
+    (click)="handleFunc('clear')"></i>
+</div>

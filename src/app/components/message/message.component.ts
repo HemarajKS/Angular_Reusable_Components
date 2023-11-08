@@ -11,7 +11,7 @@ export class MessageComponent {
     this.getTypeStyle();
   }
 
-  @Input() type!: allowedMessageTypes;
+  @Input() type: allowedMessageTypes = 'info';
   @Input() label!: string;
   wrapperClass: string = '';
   icon: string = '';

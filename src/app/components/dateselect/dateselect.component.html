@@ -1,0 +1,17 @@
+<div class="dateSelectContainer" #dateSelectContainer>
+  <div [ngClass]="getVariantClass()">
+    <div class="dateValueWrapper" (click)="handleFunc('click')">
+      <div class="dateValue">{{options[selectedOptionIndex]?options[selectedOptionIndex]:placeholder}}</div>
+    </div>
+    <div class="dateValueSelect" *ngIf="openDropdown">
+      <div class="dateValue" *ngFor="let item of options" (click)="handleFunc('itemselect', item)">{{item}}</div>
+    </div>
+    <div class="dateControlWrapper" *ngIf="!isDropDown">
+      <i class="fa-solid fa-caret-up control-up" (click)="handleFunc('control','up')"></i>
+      <i class="fa-solid fa-caret-down control-down" (click)="handleFunc('control','down')"></i>
+    </div>
+    <div class="dateControlWrapper" *ngIf="isDropDown">
+      <i class="fa-solid fa-caret-down control-down"></i>
+    </div>
+  </div>
+</div>

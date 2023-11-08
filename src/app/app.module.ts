@@ -9,6 +9,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
+import { MessageComponent } from './components/message/message.component';
+import { DateselectComponent } from './components/dateselect/dateselect.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
@@ -18,6 +21,9 @@ import { ModalComponent } from './components/modal/modal.component';
     ButtonComponent,
     CardComponent,
     ModalComponent,
+    MessageComponent,
+    DateselectComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,

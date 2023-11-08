@@ -1,0 +1,19 @@
+<div class="modal" *ngIf="isModalVisible"></div>
+<div
+  class="modalContent"
+  [@scale]
+  *ngIf="isModalVisible"
+  (click)="closeOnOverlayClick ? closeModal() : null"
+>
+  <div
+    class="modalBody"
+    (click)="stopPropogation($event)"
+    [ngClass]="{ mobileFullPageClass: mobileFullPage }"
+    [style]="customStyle"
+  >
+    <ng-content></ng-content>
+    <div (click)="closeModal()" class="closeBtn" *ngIf="closeIcon">
+      <i class="fa-solid fa-x"></i>
+    </div>
+  </div>
+</div>

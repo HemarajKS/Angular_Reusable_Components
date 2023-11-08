@@ -1,0 +1,42 @@
+@import "../../scss/common";
+
+.modal {
+  @include fixedCenter;
+  z-index: 100;
+  background-color: $overlayBlack;
+  backdrop-filter: blur(1.5px);
+}
+
+.modalContent {
+  @include fixedCenter;
+  z-index: 101;
+
+  .modalBody {
+    position: relative;
+    background: $white;
+    padding: 28px;
+    border-radius: 14px;
+    margin: 16px;
+
+    .closeBtn {
+      cursor: pointer;
+      position: absolute;
+      top: 13px;
+      right: 18px;
+
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+.mobileFullPageClass {
+  @include breakpoint($tablet) {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+}

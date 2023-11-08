@@ -1,0 +1,71 @@
+@import '../../scss/common.scss';
+
+.messageContainer {
+  margin: 10px;
+
+  .messageWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 4px;
+
+    .iconClass {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+    .labelStyle{
+      text-transform: capitalize;
+    }
+
+    .successIcon{
+      background-color: $successColor;
+    }
+
+    .successLabel {
+      color: $successColor;
+    }
+
+    .infoIcon{
+      background-color: $infoColor;
+    }
+
+    .infoLabel {
+      color: $infoColor;
+    }
+
+    .warningIcon{
+      background-color: $warningColor;
+    }
+
+    .warningLabel {
+      color: $warningColor;
+    }
+
+    .errorIcon{
+      background-color: $errorColor;
+    }
+
+    .errorLabel {
+      color: $errorColor;
+    }
+  }
+  .successWrapper {
+    background-color: $successBackground;
+  }
+  .infoWrapper {
+    background-color: $infoBackground;
+  }
+  .warningWrapper {
+    background-color: $warningBackground;
+  }
+  .errorWrapper {
+    background-color: $errorBackground;
+  }
+}

@@ -1,0 +1,11 @@
+<div
+  class="card"
+  [ngClass]="{ mobileFullScreenClass: mobileFullScreen }"
+  [style]="customStyle"
+>
+  <div *ngIf="heading || subHeading" class="headingContainer">
+    <div class="heading" *ngIf="heading">{{ heading }}</div>
+    <div class="subHeading" *ngIf="subHeading">{{ subHeading }}</div>
+  </div>
+  <ng-content></ng-content>
+</div>

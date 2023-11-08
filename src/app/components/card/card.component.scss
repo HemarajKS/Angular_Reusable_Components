@@ -1,0 +1,55 @@
+@import "../../scss/common";
+
+.card {
+  background: $white;
+  box-shadow: $cardShadow;
+  -webkit-box-shadow: $cardShadow;
+  -moz-box-shadow: $cardShadow;
+  padding: 50px;
+  border-radius: 14px;
+
+  .headingContainer {
+    padding-bottom: 20px;
+
+    .heading {
+      color: $bayOfMany;
+      font-weight: 600;
+      font-size: 20px;
+      padding-bottom: 6px;
+    }
+
+    .subHeading {
+      color: $bayOfMany;
+    }
+  }
+
+  @include breakpoint($tablet) {
+    padding: 20px 30px;
+    box-shadow: none;
+    border: 1px solid $lightGray;
+
+    .headingContainer {
+      padding-bottom: 20px;
+
+      .heading {
+        font-weight: 500;
+        font-size: 18px;
+        padding-bottom: 0;
+      }
+
+      .subHeading {
+        font-size: 14px;
+        color: $bayOfMany;
+      }
+    }
+  }
+}
+
+
+.mobileFullScreenClass {
+  @include breakpoint($tablet) {
+    border-radius: 0;
+    position: fixed;
+    inset: 0;
+  }
+}

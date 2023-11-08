@@ -2,23 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import '../src/app/scss/common';
 
-*{
+* {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   min-height: 100vh;
   background-color: $Alabaster;
 }
 
-ul li{
+ul li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 

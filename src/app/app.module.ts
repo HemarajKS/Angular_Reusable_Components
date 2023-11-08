@@ -10,9 +10,10 @@ import { ButtonComponent } from './components/button/button.component';
 import { CardComponent } from './components/card/card.component';
 import { MessageComponent } from './components/message/message.component';
 import { DateselectComponent } from './components/dateselect/dateselect.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 @NgModule({
-  declarations: [AppComponent, InputComponent, ButtonComponent, CardComponent, MessageComponent, DateselectComponent],
+  declarations: [AppComponent, InputComponent, ButtonComponent, CardComponent, MessageComponent, DateselectComponent, DropdownComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   bootstrap: [AppComponent],
 })

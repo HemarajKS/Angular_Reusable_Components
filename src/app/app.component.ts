@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular_reusable_components';
-  value: string = '';
+  value!: string;
 
   onInputValueChange(newValue: string) {
     this.value = newValue;

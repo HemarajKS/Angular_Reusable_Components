@@ -2,19 +2,35 @@
 
 .inputWrapper{
   position: relative;
-  .input{
-      border: 1px solid $silver;
-      color: $gray;
-      border-radius: 0.25em;
-      padding: 0.5em 1.9em 0.5em 0.8em;
-      width: 100%;
-      margin: 0;
-      font-size: 1em;
-      font-family: inherit;
+  .inputSection{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .input[type="text"], .input[type="password"], .input[type="email"]{
+        border: 1px solid $silver;
+        color: $gray;
+        border-radius: 0.25em;
+        padding: 0.5em 1.9em 0.5em 0.8em;
+        width: 100%;
+        margin: 0;
+        font-size: 1em;
+        font-family: inherit;
+  
+        &:focus{
+            outline: 2px solid $purpleHeart;
+        }
+    }
+    .input[type="checkbox"], .input[type="radio"]{
+      cursor: pointer;
+      height: 18px;
+      width: 18px;
+    }
 
-      &:focus{
-          outline: 2px solid $purpleHeart;
-      }
+  }
+
+  .labelClass {
+    padding: 5px;
+    cursor: pointer;
   }
 
   .iconsStyle{
